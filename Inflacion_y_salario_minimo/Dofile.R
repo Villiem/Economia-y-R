@@ -58,7 +58,6 @@ join_inf_salmin <- join_inf_salmin %>% mutate(tasa_salmin = ((sal_min_real/lag(s
 
 view(join_inf_salmin)
 
-join_inf_salmin %>% ggplot(aes(tasa_infl, tasa_salmin)) + geom_point()  ## Sale fea la chingadera, podriamos intentar
 
 df1 <- join_inf_salmin %>% select(year, tasa_salmin, inf_media)
 
