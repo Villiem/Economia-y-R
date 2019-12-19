@@ -48,7 +48,7 @@ view(salmin_34)
 salmin_70 <- salmin_34 %>% filter(year >= 1970) %>% select(year, sal_min_real)## para tener data frames identicos
 
 ## Ahora juntamos ambos data frames, arroja un error porque uno no es numeric
-inf_anual <- inf_anual %>% mutate(year = as.numeric(year)) %>% rename(inf_media = media)
+inf_anual <- inf_anual %>% mutate(year = as.numeric(year))
 
 join_inf_salmin <- inner_join(salmin_70, inf_anual, by = "year")
 view(join_inf_salmin)
