@@ -85,7 +85,7 @@ pres <- pres %>% mutate(
 install.packages("siebanxicor")
 library(siebanxicor)
 library(ggalt)
-setToken('915022593c7ce68c87708913d1733c25479f0df604da9a3840de32568a5834b3')
+setToken('Saca un token')
 deuda <- getSeriesData('SG195', startDate = '1980-01-01', endDate = '2020-05-30')
 deuda <- getSerieDataFrame(deuda, 'SG195')
 view(deuda)
