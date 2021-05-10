@@ -2,6 +2,7 @@
 # y no es mi fuerte
 library(scales)
 library(ggrepel)
+library(ggthemes)
 p1 <- ggplot(df_final, aes(x = fecha, y = media_movil, fill = region_graf)) + 
         geom_area() +
         labs(title = "India now accounts for over a third of all\nconfirmed covid-19 cases in the world",
@@ -55,4 +56,4 @@ p2 + geom_label_repel(aes(x = fecha, y = altura, label = etiqueta),
             arrow =  arrow(length = unit(.01, "npc"))) +
         ### Falta mi marcota de agua, como chingados no
         annotate("text", x = as.Date('2020-5-1'), y = 500, label = "github.com/villiem", alpha = .2, size = 10)
-
+## guarde manual con 1500*700 :D
